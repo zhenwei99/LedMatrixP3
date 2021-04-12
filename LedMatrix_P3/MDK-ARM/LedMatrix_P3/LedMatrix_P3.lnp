@@ -1,0 +1,26 @@
+--cpu=Cortex-M4.fp.sp
+".\ledmatrix_p3\startup_stm32f407xx.o"
+".\ledmatrix_p3\main.o"
+".\ledmatrix_p3\stm32f4xx_it.o"
+".\ledmatrix_p3\stm32f4xx_hal_msp.o"
+".\ledmatrix_p3\p3.o"
+".\ledmatrix_p3\stm32f4xx_hal_tim.o"
+".\ledmatrix_p3\stm32f4xx_hal_tim_ex.o"
+".\ledmatrix_p3\stm32f4xx_hal_rcc.o"
+".\ledmatrix_p3\stm32f4xx_hal_rcc_ex.o"
+".\ledmatrix_p3\stm32f4xx_hal_flash.o"
+".\ledmatrix_p3\stm32f4xx_hal_flash_ex.o"
+".\ledmatrix_p3\stm32f4xx_hal_flash_ramfunc.o"
+".\ledmatrix_p3\stm32f4xx_hal_gpio.o"
+".\ledmatrix_p3\stm32f4xx_hal_dma_ex.o"
+".\ledmatrix_p3\stm32f4xx_hal_dma.o"
+".\ledmatrix_p3\stm32f4xx_hal_pwr.o"
+".\ledmatrix_p3\stm32f4xx_hal_pwr_ex.o"
+".\ledmatrix_p3\stm32f4xx_hal_cortex.o"
+".\ledmatrix_p3\stm32f4xx_hal.o"
+".\ledmatrix_p3\stm32f4xx_hal_exti.o"
+".\ledmatrix_p3\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter ".\LedMatrix_P3\LedMatrix_P3.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "LedMatrix_P3.map" -o .\LedMatrix_P3\LedMatrix_P3.axf
